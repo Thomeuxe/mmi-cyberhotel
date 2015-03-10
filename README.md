@@ -1,4 +1,7 @@
 # mmi-cyberhotel
+
+## Projet de Manara Buisson, Rémi Bonnet & Thomas Lecoeur
+
 This is a teaching project for the Modeling and Advanced databases course, in the MMI option at IUT1 Grenoble, France.
 
 The objective of the project is to illiustrate the complete lifecycle of a small web application. Starting from
