@@ -2,13 +2,14 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}{% endblock %} - CyberHotel</title>
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     </head>
     <body>
         <div class="container">
+            {% block nav %}{% include '::nav.html.twig' %}{% endblock %}
             {% block body %}{% endblock %}
             {% block javascripts %}{% endblock %}
         </div>
