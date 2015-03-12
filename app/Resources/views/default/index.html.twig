@@ -1,5 +1,6 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    My Homepage. 
+    {% block nav %}{% include '::nav.html.twig' %}{% endblock %}
+    My Homepage.
 {% endblock %}
