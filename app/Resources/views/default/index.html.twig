@@ -1,0 +1,8 @@
+{% extends 'base.html.twig' %}
+{% block title %}Accueil{% endblock %}
+{% block body %}
+    <div class="jumbotron">
+        <h1 class="text-center">Bienvenue !{% block token %}{% endblock %}</h1>
+        <p class="text-center">CyberHotel - Réservez votre chambre !</p>
+    </div>
+{% endblock %}
