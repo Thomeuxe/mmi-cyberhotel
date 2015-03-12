@@ -1,6 +1,6 @@
 # mmi-cyberhotel
 
-## Projet de Manara Buisson, Rémi Bonnet & Thomas Lecoeur
+## Projet de Manara Buisson, Rémi Bonnet, Sylvain Guillot & Thomas Lecoeur
 
 This is a teaching project for the Modeling and Advanced databases course, in the MMI option at IUT1 Grenoble, France.
 
