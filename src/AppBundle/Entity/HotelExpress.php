@@ -5,13 +5,19 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
-
+/**
+ * @ORM\Entity
+ * @author Sophie
+ *
+ */
 class HotelExpress {
 	
 	/**
 	 * The city where the hotel is located. 
 	 *
 	 * @var string
+	 * @ORM\column(type="string",length=100)
+	 * @ORM\Id
 	 */
 	protected $ville;
 
@@ -19,13 +25,25 @@ class HotelExpress {
 	 * The list of rooms in the hotel
 	 * 
 	 * @var \Doctrine\Common\Collections\Collection
+	 * @ORM\OneToMany(targetEntity="Chambre", mappedBy="hotel")
+	 * 
 	 */
 	protected $chambres;
 
+	/**
+	 * The list of sejours in the hotel
+	 *
+	 * @var \Doctrine\Common\Collections\Collection
+	 * @ORM\OneToMany(targetEntity="Sejour", mappedBy="hotel")
+	 */
+	protected $sejours;
+	
+	
     /**
      * Constructor
      * 
      * @param string $ville
+     * @ORM\OneToMany((targetEntity="Chambre", mappedBy="hotel")
      */
     public function __construct($ville)
     {
