@@ -7,7 +7,6 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 /**
  * @ORM\Entity
- * @author Sophie
  *
  */
 class HotelExpress {
